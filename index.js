@@ -361,7 +361,7 @@ const facebookOrgChart = {
   },
 };
 
-console.log('facebookOrgChart: ', facebookOrgChart);
+// console.log('facebookOrgChart: ', facebookOrgChart);
 
 // const orgOutputArr = [
 //   [0, 'Zuckerberg'],
@@ -424,9 +424,7 @@ function convertDecimalToBinary(inputDecimalNum) {
 
   function convertDecimalToBinaryRecursively(decimalNum) {
     const quotient = Math.floor(decimalNum / 2);
-    console.log('quotient: ', quotient);
     const remainder = decimalNum % 2;
-    console.log('remainder: ', remainder);
     binaryNum.unshift(remainder);
     if (quotient > 0) {
       convertDecimalToBinaryRecursively(quotient);
